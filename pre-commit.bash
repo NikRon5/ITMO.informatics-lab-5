@@ -5,7 +5,7 @@ for file in $(git diff --cached --name-only); do
         if tail -n 1 "$file" | grep -q "Автор:"; then
             echo "$file соответствует формату и имеет подпись"
         else
-            echo "Ошибка: $file соответствует формату, но не имеет подписи>
+            echo "Ошибка: $file соответствует формату, но не имеет подписи"
             exit 1
         fi
     else
