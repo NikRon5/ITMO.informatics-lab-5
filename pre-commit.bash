@@ -13,3 +13,5 @@ for file in $(git diff --cached --name-only); do
         exit 1
     fi
 done
+
+exit 0
